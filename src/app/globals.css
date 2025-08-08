@@ -1,0 +1,119 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --font-poppins: 'Poppins', Arial, Helvetica, sans-serif;
+  --font-great-vibes: 'Great Vibes', cursive;
+  --font-mono: "Courier New", Courier, monospace;
+
+  --font-sans: var(--font-poppins);
+  --font-mono: var(--font-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.font-signature {
+  font-family: var(--font-great-vibes);
+}
+
+.slider-wrapper {
+  background: #051533;
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: auto;
+  gap: 30px;
+  padding: 0 50px;
+  scrollbar-width: none;
+}
+
+.slider-track::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  min-width: 200px;
+  height: 200px;
+  background: #0a1b3d;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, border 0.3s ease;
+  border-radius: 8px;
+}
+
+.card.active {
+  transform: scale(1.1);
+  border: 2px solid white;
+}
+
+.card img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.card p {
+  margin-top: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+.read-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #2b1f25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.circle:hover {
+  background-color: #47323a;
+}
+
+.circle span {
+  font-size: 12px;
+  color: white;
+}
+
+.pagination {
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+}

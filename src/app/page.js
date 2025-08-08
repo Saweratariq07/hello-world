@@ -12,9 +12,7 @@ import Team from "./components/Team";
 export default function Home() {
   return (
     <div>
-      {/* Header Section with background */}
       <div className="relative w-full min-h-screen">
-        {/* Background image zoomed-in and cover */}
         <div
           className="absolute inset-0 bg-center bg-no-repeat bg-cover z-0"
           style={{
@@ -22,16 +20,14 @@ export default function Home() {
           }}
         />
         
-        {/* Optional dark overlay */}
-
-        {/* Foreground content */}
+        
         <div className="relative z-20">
           <Navbar />
           <Header />
         </div>
       </div>
 
-      {/* Rest of the page */}
+      
       <About />
       <Services />
       <Cards />

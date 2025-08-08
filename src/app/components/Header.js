@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';  // Import Next.js Image
+import Image from 'next/image';  
 
 const features = [
   {
@@ -29,7 +29,6 @@ const Header = () => {
         An IT company with a Difference! Building the Future by Serving technology better
       </p>
 
-      {/* Features row - horizontal, responsive */}
       <div className="max-w-4xl w-full mt-12 flex flex-wrap justify-center gap-8 px-4">
         {features.map(({ imgSrc, title }, idx) => (
           <div
@@ -39,8 +38,8 @@ const Header = () => {
             <Image
               src={imgSrc}
               alt={title}
-              width={20}      // control width
-              height={20}     // control height
+              width={20}      
+              height={20}     
               className="object-contain"
             />
             <h3 className="text-xl font-semibold">{title}</h3>

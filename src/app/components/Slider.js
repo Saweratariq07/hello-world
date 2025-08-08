@@ -5,7 +5,6 @@ import { Navigation, Autoplay } from "swiper/modules";
 import Image from "next/image";
 import { useState } from "react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -29,7 +28,6 @@ export default function Client() {
     <>
       <section className="bg-blue-950 h-screen flex items-center justify-center overflow-hidden">
         <div className="max-w-[80%] w-full px-6 flex flex-col items-center relative">
-          {/* Title Section */}
           <div className="flex flex-col items-center mb-12">
             <div className="flex items-center gap-4">
               <div className="h-1 w-8 bg-blue-500 rounded"></div>

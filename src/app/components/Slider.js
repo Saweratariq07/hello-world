@@ -92,7 +92,6 @@ export default function Client() {
             ))}
           </Swiper>
 
-          {/* Navigation Arrows & Counter aligned horizontally */}
           <div className="flex items-center gap-6 mt-2 select-none">
             <button
               aria-label="Previous slide"

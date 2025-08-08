@@ -33,7 +33,6 @@ const services = [
 export default function Cards() {
   return (
     <section className="bg-[#060D1C] py-16">
-      {/* Section Title */}
       <div className="flex flex-col items-center mb-12">
         <div className="flex items-center gap-4">
           <div className="h-1 w-8 bg-blue-500 rounded"></div>
@@ -52,23 +51,20 @@ export default function Cards() {
 </div>
         </div>
 
-      {/* Cards */}
       <div className="w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 border border-gray-700">
         {services.map((service, index) => (
           <div
             key={index}
             className="group relative bg-[#0A1A3A] p-6 border border-gray-700 flex flex-col justify-between overflow-hidden"
           >
-            {/* Hover Background Image */}
             <div
               className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
               style={{ backgroundImage: `url(/laptop.png)` }}
             ></div>
 
-            {/* Dark Overlay */}
             <div className="absolute inset-0 bg-[#0A1A3A]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-            {/* Content */}
+           
             <div className="relative z-10 flex flex-col h-full">
               <FaShieldAlt className="text-white text-3xl mb-4" />
               <h3 className="text-lg font-bold text-white mb-3">
@@ -76,7 +72,7 @@ export default function Cards() {
               </h3>
               <p className="text-sm text-gray-300 flex-grow">{service.desc}</p>
 
-              {/* Button */}
+            
               <div className="mt-5">
                 <button className="flex flex-col items-start text-blue-500 border border-blue-500 px-5 py-4 rounded-lg text-base font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-blue-500 hover:text-white">
                   <span className="leading-none font-semibold">Learn</span>

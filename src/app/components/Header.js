@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';  // Import Next.js Image
 
 const features = [
   {
@@ -19,12 +20,12 @@ const features = [
 
 const Header = () => {
   return (
-    <div className="min-h-[80vh] flex flex-col justify-center items-center text-center text-white px-4  pb-20  z-10">
+    <div className="min-h-[80vh] flex flex-col justify-center items-center text-center text-white px-4 pb-20 z-10">
       <h1 className="text-[48px] md:text-[52px] font-bold leading-snug">
         Moving Business to <br />
         <span className="text-blue-500">Growth</span>
       </h1>
-      <p className="text-gray-300 text-sm md:text-lg max-w-2xl mt-4">
+      <p className="text-gray-300 text-sm md:text-sm max-w-2xl mt-4">
         An IT company with a Difference! Building the Future by Serving technology better
       </p>
 
@@ -35,10 +36,12 @@ const Header = () => {
             key={idx}
             className="flex items-center gap-3 min-w-[150px] justify-center"
           >
-            <img
+            <Image
               src={imgSrc}
               alt={title}
-              className=" object-contain"
+              width={20}      // control width
+              height={20}     // control height
+              className="object-contain"
             />
             <h3 className="text-xl font-semibold">{title}</h3>
           </div>

@@ -11,13 +11,15 @@ import "swiper/css/navigation";
 
 const clients = [
   "/client.png",
-  "/clients.png",
+  "/clinets.png",
   "/client.png",
-  "/clients.png",
+  "/clinets.png",
   "/client.png",
-  "/clients.png",
+  "/clinets.png",
   "/client.png",
-  "/clients.png",
+  "/clinets.png",
+  "/client.png",
+  "/clinets.png",
 ];
 
 export default function Client() {
@@ -76,7 +78,7 @@ export default function Client() {
             {clients.map((src, index) => (
               <SwiperSlide key={index}>
                 <div
-                  className={`flex justify-center items-center p-6 transition rounded-md h-36 border border-white ${
+                  className={`flex justify-center items-center p-6 transition rounded-md h-36  ${
                     index === centerIndex ? "scale-110" : "scale-100"
                   }`}
                 >

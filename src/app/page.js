@@ -36,9 +36,10 @@ export default function Home() {
       <Services />
       <Cards />
       <Experience />
+      <Client />
       <Team />
       <Slider />
-      <Client />
+      
       <Footer />
     </div>
   );

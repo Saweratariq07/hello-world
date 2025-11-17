@@ -1,10 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hello World Software Company Website
+
+This is the official website for **Hello World Software Company**, built with [Next.js](https://nextjs.org).  
+It showcases our services and acts as a starting point for our online presence.
+
+## Project Overview
+
+This is a simple “Hello World” website demonstrating a modern frontend setup using **Next.js**.  
+It’s designed to be lightweight, fast, and easy to customize for future content and features.
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to run the project locally:
+
+### Install Dependencies
 
 ```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
 npm run dev
 # or
 yarn dev
@@ -12,25 +27,23 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
+Open http://localhost:3000 in your browser to view the website.
+Any changes you make to app/page.js will automatically reload the page.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Built With
+Next.js – React framework for production
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+React – JavaScript library for building UI
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Vercel Font Optimization – Optimized fonts using Geist
 
-## Learn More
+Deployment
+The website can be easily deployed using the Vercel platform.
+For detailed deployment instructions, check Next.js deployment documentation.
 
-To learn more about Next.js, take a look at the following resources:
+Learn More
+Next.js Documentation – Official documentation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Next.js Learn – Interactive tutorial
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Made with ❤️ by Sawera Tariq
